@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB</title>
+</head>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .menuLateral {
+            background-color: rgba(68, 65, 65, 0.778);
+            width: 90px;
+            height: 100%;
+            position: fixed;
+            overflow-y: auto;
+            font-size: 12px;
+            /* Adiciona uma barra de rolagem vertical, se necessário */
+        }
+
+        .menuLateral ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            /* Alinha os itens verticalmente */
+        }
+
+        .menuLateral li {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .menuLateral img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .menuLateral a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .contemResposta{
+            background-color: turquoise;
+            position: fixed;
+            left: 90px;
+            width: 400px;
+            height: 100%;
+
+        }
+        .hidden{
+            display: none;
+        }
+        @import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');    
+            #total {
+                background-color: #545454;
+                border-radius: 30px;
+                height: 400px;
+                width: 320px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                border: solid 5px;
+                border-color: black;
+            }
+    
+            #tela {
+                background-color: white;
+                width: 280px;
+                height: 130px;
+                color: black;
+                text-align: center;
+                border-radius: 24px;
+                border: solid 5px;
+                border-color: black;
+            }
+    
+            #teclas {
+                display: inline-grid;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+            }
+    
+            .lista {
+                background-color: white;
+                margin: 12px;
+                padding: 2px;
+                width: 288px;
+            }
+    
+            .prin {
+                margin-top: -7px;
+                font-size: 18px;
+                text-align: left;
+                margin-left: 12px;
+                margin-bottom: -22px;
+            }
+    
+            .depois {
+                margin: 0;
+                font-size: 35px;
+                text-align: center;
+            }
+    
+            .digitar {
+                border: none;
+            }
+            .calculadora{
+                position: fixed;
+                left: 690px;
+            }
+    </style>
+</head>
+
+<body>
+    <nav class="menuLateral">
+        <ul>
+            <li><img src="https://img.icons8.com/ios/50/needle.png" alt="needle"><br><a href="" >Agulhas</a></li>
+            <li><img src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/external-ink-print-those-icons-lineal-color-those-icons-1.png"
+                    alt="external-ink-print-those-icons-lineal-color-those-icons-1"><br><a href="#">Teste</a></li>
+            <li><img src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/external-page-pirates-icongeek26-glyph-icongeek26.png"
+                    alt="external-page-pirates-icongeek26-glyph-icongeek26"><br><a href="#">Estilos</a></li>
+            <li><img src="https://img.icons8.com/carbon-copy/100/payment-history.png" alt="payment-history"><br><a
+                    href="#">Gastos Fixos</a></li>
+            <li><img src="https://img.icons8.com/ios/50/credit-card-interest.png" alt="credit-card-interest"><br><a
+                    href="#">Acrescimo Cartão</a></li>
+        </ul>
+    </nav>
+    <script src="animacaoNav.js"></script>
+    <div class="contemResposta">
+        <div id="resposta">saasddasd</div>
+    </div>
+    <div class="calculadora">
+        <div id="total">
+            <div id="tela">
+                <div class="prin">
+                    <p>Orçamento:</p>
+                </div>
+    
+                <div class="depois">
+                    <p>R$2.000</p>
+                </div>
+            </div>
+            <div id="teclas">
+                <div class="lista">Custos Variáveis: <input type="text" class="digitar"> </div>
+                <div class="lista">Custos Fixos: <input type="text" class="digitar"> </div>
+                <div class="lista">Perímetro: <input type="text" class="digitar"> </div>
+                <div class="lista">Lucro: <input type="text" class="digitar"> </div>
+            </div>
+        </div>
+   
+    </div>
+</body>
+
+</html>
+
+</body>
+
+</html>
